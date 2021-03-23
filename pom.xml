@@ -20,6 +20,7 @@
 		<lombok.version>1.18.16</lombok.version>
 		<guava.version>30.1.1-jre</guava.version>
 		<jackson-datatype-guava.version>2.12.2</jackson-datatype-guava.version>
+		<reactor-tools.version>3.4.3</reactor-tools.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -38,7 +39,7 @@
 		<dependency>
 			<groupId>io.projectreactor</groupId>
 			<artifactId>reactor-tools</artifactId>
-			<version>3.4.3</version>
+			<version>${reactor-tools.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
