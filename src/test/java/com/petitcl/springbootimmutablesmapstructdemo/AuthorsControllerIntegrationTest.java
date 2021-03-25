@@ -32,7 +32,7 @@ public class AuthorsControllerIntegrationTest {
 
 	@BeforeEach
 	public void beforeEach() {
-		fixturesUtils.upsertTestData();
+		fixturesUtils.upsertTestData().block();
 	}
 
 	@DisplayName("FindAllAuthors - Success")

@@ -48,7 +48,7 @@ public class CategoriesRepositoryImpl implements CategoriesRepository {
 		return Mono.just(id)
 			.map((i) -> {
 				final Query query = Query.query(
-					Criteria.where("id").is(i)
+					Criteria.where("_id").is(i)
 				);
 				final Update update = new Update();
 				update.inc("numberOfBooks");

@@ -39,7 +39,7 @@ public class BooksControllerIntegrationTest {
 
 	@BeforeEach
 	public void beforeEach() {
-		fixturesUtils.upsertTestData();
+		fixturesUtils.upsertTestData().block();
 	}
 
 	@DisplayName("FindAllBooks - Success")

@@ -32,7 +32,7 @@ public class CategoriesControllerIntegrationTest {
 
 	@BeforeEach
 	public void beforeEach() {
-		fixturesUtils.upsertTestData();
+		fixturesUtils.upsertTestData().block();
 	}
 
 	@DisplayName("FindAllCategories - Success")
