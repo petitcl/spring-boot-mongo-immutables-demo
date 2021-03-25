@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.petitcl</groupId>
-	<artifactId>spring-boot-immutables-mapstruct-demo</artifactId>
+	<artifactId>spring-boot-mongo-immutables-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-immutables-mapstruct-demo</name>
-	<description>Sample project that demonstrate the usage of immutables and MapStruct with Spring Boot</description>
+	<name>spring-boot-mongo-immutables-demo</name>
+	<description>Sample project that demonstrate the usage of Immutables and MapStruct with Spring Boot and Spring Boot Data Mongodb Reactive</description>
 	<properties>
 		<java.version>11</java.version>
 		<immutables.version>2.8.2</immutables.version>

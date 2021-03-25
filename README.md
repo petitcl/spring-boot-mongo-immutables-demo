@@ -1,4 +1,4 @@
-# spring-boot-immutables-mapstruct-demo
+# spring-boot-mongo-immutables-demo
 
 ## Introduction
 This repository contains a sample Spring Boot project
@@ -49,7 +49,7 @@ Here are some insights learned during the development of this demo application:
     in order to let javax validation take place.
 - Spring Data Mongodb can handle immutables objects. However, there are a some gotchas to be aware of
   (A complete meta annotation example that handles most of the points mentioned below can be found in
-  [ImmutableMongoEntity.java](/src/main/java/com/petitcl/springbootimmutablesmapstructdemo/commons/annotations/ImmutableMongoEntity.java)):
+  [ImmutableMongoEntity.java](/src/main/java/com/petitcl/springbootmongoimmutablesdemo/commons/annotations/ImmutableMongoEntity.java)):
     - The `_id` property that cannot be known during insertion, which can conflict with the null checks of immutables
     if the `_id` property is mandatory.  This means that a workaround must be implemented for that:
         - either annotate the id field with `@Nullable`
